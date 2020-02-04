@@ -46,6 +46,8 @@ To receive full credit, you must post your stable path before the start of the n
 - [ ] Replicate the process for **your own dataset**. This will involve finding/creating a suitable dataset, saving it somewhere in your repository, and writing the code. You should leverage the files present in the root of this directory (`tutorial1_intro/` [index.html](index.html), [style.css](style.css), [main.js](main.js))
 - [ ] Update the table's conditional formatting to highlight something meaningful for your new dataset. This may include changing the logic for the cell's [class](https://github.com/d3/d3-selection#selection_classed), adding another [attribute](https://github.com/d3/d3-selection#selection_attr), or directly augmenting the cell's [style](https://github.com/d3/d3-selection#selection_style).
 
+My own data set from: https://whoownswhat.justfix.nyc
+
 **BONUS:**
 
 - [ ] Add logic to update the appearance of an _entire row_ (not just a single cell).
