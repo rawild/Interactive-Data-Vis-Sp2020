@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+}
+th {
+    padding: 5px;
+}
+td {
+    text-align: center;
+}
+.darkestBlue {
+    background-color: rgba(21, 16, 119, 0.836);
+    color: white;
+}
+.darkBlue {
+    background-color: rgba(89, 78, 250, 0.788)
+}
+.middleBlue {
+    background-color: rgba(154, 147, 255, 0.829)
+}
+.lightBlue {
+    background-color: rgba(205, 202, 250, 0.911)
+}
+.lightestBlue{
+    background-color: rgba(246, 246, 255, 0.938)
+}
+.white {
+    background-color: rgba(253, 237, 237, 0.938)
+}
+.source {
+    margin-top: 30px;
+}
