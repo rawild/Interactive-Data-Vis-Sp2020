@@ -45,14 +45,19 @@ d3.csv("../data/US_income_inequality.csv").then(data => {
         .join("tr"); 
      rows
         .selectAll("td")
-        .data(d => Object.values(d))
+        .data((d) => {
+            return data.columns.map((column) => {
+                return {"column": column, "value": d[column]} 
+            })
+        })
         .join("td")
         .attr("class", (d,i) => {
             if (i > 6) { 
-                return getClassColor(d) 
+                return getClassColor(d.value) 
             }
         })
-        .text(d => d);
+        .text(d => d.value);
+    
 })
 
 d3.select("body")

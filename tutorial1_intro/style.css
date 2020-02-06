@@ -3,10 +3,11 @@ body {
     font-size: .8em;
 }
 th {
-    padding: 5px;
+    padding: 10px;
 }
 td {
     text-align: center;
+    padding: 15px;
 }
 .darkestBlue {
     background-color: rgba(21, 16, 119, 0.836);
