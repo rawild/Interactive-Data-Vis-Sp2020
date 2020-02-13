@@ -22,7 +22,7 @@ d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
         .scaleLinear()
         .domain(d3.extent(data, d => d.Percentage * wealth))
         .range([margin.left, width - margin.right]);
-    const yAxis = d3.axisLeft(yScale);
+    const yAxis = d3.axisLeft(yScale).tickSize(0).tickPadding(20);
     
     // Shape Drawing Code 
     // main svg square
@@ -64,7 +64,17 @@ d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
         .attr("class", "axis")
         .attr("transform", `translate(${xScale(0)},0)`)
         .call(yAxis);
+
+    d3.select("body")
+    .append("div")
+    .attr("class","source")
+    d3.select(".source")
+    .append("a")
+    .attr("href", "https://www.nber.org/papers/w24085.pdf")
+    .text("Source: Household Wealth Trends in the United States 1962-2016: Has Middle Class Wealth Recovered?")
 });
+
+
 
 /* vertical graph */
 /*
