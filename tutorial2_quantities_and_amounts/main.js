@@ -1,15 +1,20 @@
+function getPerPerson(percent){
+    return percent * 98000000000000 / 64680000
+}
 /* horizantal graph */
 //Load data
 d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
-    console.log(data)
 
     // Constants in SVG Frame 
     const width = window.innerWidth * 0.9,
-    height = window.innerHeight / 1.5,
+    height = window.innerHeight / 1.2,
     paddingInner = 0.2,
-    margin = { top: 40, bottom: 40, left: 200, right:100 },
-    wealth = 98;
-
+    margin = { top: 10, bottom: 40, left: 200, right:140 },
+    wealth = 98,
+    // add 1 on length to move out of darkest red at bottom
+    barColors = d3.scaleOrdinal(d3.schemeRdYlBu[data.length+1]),
+    barSpace = 70;
+    
     // Scales for visualization 
     const yScale = d3
         .scaleBand()
@@ -20,7 +25,7 @@ d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
         .scaleLinear()
         .domain(d3.extent(data, d => d.Percentage * wealth))
         .range([margin.left, width - margin.right]);
-    const yAxis = d3.axisLeft(yScale).ticks(data.length);
+    const yAxis = d3.axisLeft(yScale);
     
     // Shape Drawing Code 
     // main svg square
@@ -38,7 +43,7 @@ d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
         .attr("x", d => xScale(Math.min(0,d.Percentage * wealth)))
         .attr("height", yScale.bandwidth())
         .attr("width", d => Math.abs(xScale(d.Percentage * wealth)-xScale(0)))
-        .attr("fill", "grey")
+        .attr("fill", (d,i) => barColors.range()[(data.length + 1)- (i+1) ])
     //append labels
     const text = svg
         .selectAll("text")
@@ -47,14 +52,16 @@ d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
         .attr("class", 
             d => {return "label"+ (d.Percentage < 0 ? " negative" : "")})
         .attr("y", d => yScale(d["Wealth Bracket"]) + (yScale.bandwidth() / 2))
-        .attr("x", d => xScale(d.Percentage * wealth) + 60)       
-        text.append("tspan") 
-       .attr("x", d => xScale(d.Percentage * wealth) + 60)
-       .text( d => "$ "+ d.Percentage * wealth )
+        .attr("x", d => xScale(d.Percentage * wealth) + barSpace);       
        text.append("tspan")
-       .attr("x", d => xScale(d.Percentage * wealth) + 60)
-       .text("Billion")
-       .attr("dy", "1.25em")
+       .attr("x", d => xScale(d.Percentage * wealth) + barSpace)
+       .text( d => "$"+ d3.format(",.2f")(d.Percentage * wealth) + " Trillion");
+       text.append("tspan") 
+       .attr("x", d => xScale(d.Percentage * wealth) + barSpace)
+       .attr("class", "sub")
+       .text( d => "(Avg: $"+ d3.format(",.0f")(getPerPerson(d.Percentage))+")")
+       .attr("dy", "1.25em");
+     
     // append Y axis
     svg
         .append("g")
