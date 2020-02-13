@@ -1,6 +1,3 @@
-function getPerPerson(percent){
-    return percent * 98000000000000 / 64680000
-}
 /* horizantal graph */
 //Load data
 d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
@@ -18,7 +15,7 @@ d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
     // Scales for visualization 
     const yScale = d3
         .scaleBand()
-        .domain(data.map(d => d["Wealth Bracket"]))
+        .domain(data.map(d => d["Wealth Bracket"]).reverse())
         .range([margin.top, height - margin.bottom])
         .paddingInner(paddingInner);
     const xScale = d3
@@ -55,11 +52,10 @@ d3.csv("../data/US_Wealth_Inequality_2016.csv", d3.autoType).then(data => {
         .attr("x", d => xScale(d.Percentage * wealth) + barSpace);       
        text.append("tspan")
        .attr("x", d => xScale(d.Percentage * wealth) + barSpace)
-       .text( d => "$"+ d3.format(",.2f")(d.Percentage * wealth) + " Trillion");
+       .text( d => "$"+ d3.format(",.2f")(d.Percentage * wealth));
        text.append("tspan") 
        .attr("x", d => xScale(d.Percentage * wealth) + barSpace)
-       .attr("class", "sub")
-       .text( d => "(Avg: $"+ d3.format(",.0f")(getPerPerson(d.Percentage))+")")
+       .text( d => "Trillion")
        .attr("dy", "1.25em");
      
     // append Y axis
