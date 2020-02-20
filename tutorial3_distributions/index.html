@@ -1,12 +1,17 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Interactive Data Visualization Tutorial</title>
+    <title>Billionaire Scatterplot</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <label for="dropdown">Filter Selection</label>
-    <select id="dropdown" name="dropdown"></select>
+    <div class="container">
+      <h1>How are Billionaires faring in 2020?</h1>
+      <label class="selectLabel" for="dropdown1">First Country</label>
+      <select id="dropdown1" name="dropdown1"></select>
+      <label class="selectLabel" for="dropdown2">Comparison Country</label>
+      <select id="dropdown2" name="dropdown1"></select>
+  </div>
     <div id="d3-container"> </div>
     <script src="../lib/d3.js"></script>
     <script src="main.js"></script>

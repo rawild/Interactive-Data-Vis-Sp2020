@@ -1,0 +1,501 @@
+,Rank,Name,NetWorth,LastUpdate,ChangethisYear,Country,Industry
+0,1,Jeff Bezos,132,808,17.5,United States,Technology
+1,2,Bill Gates,120,289,6.49,United States,Technology
+2,3,Bernard Arnault,99.5,2610,-5.76,France,Consumer
+3,4,Warren Buffett,90.4,1080,1.12,United States,Diversified
+4,5,Mark Zuckerberg,82.9,-114,4.5,United States,Technology
+5,6,Amancio Ortega,74.3,777,-1.13,Spain,Retail
+6,7,Larry Page,72.5,299,7.92,United States,Technology
+7,8,Sergey Brin,70.3,289,7.64,United States,Technology
+8,9,Steve Ballmer,67.9,16.7,9.81,United States,Technology
+9,10,Carlos Slim,64.8,328,4.54,Mexico,Diversified
+10,11,Larry Ellison,62.8,193,4,United States,Technology
+11,12,Charles Koch,60.5,306,-1.57,United States,Industrial
+12,13,Julia Flesher Koch,60.5,306,-1.57,United States,Industrial
+13,14,Francoise Bettencourt Meyers,58.6,903,-0.345,France,Consumer
+14,15,Mukesh Ambani,57.9,1300,-0.701,India,Energy
+15,16,Rob Walton,53.8,-642,-0.422,United States,Retail
+16,17,Jim Walton,53.7,-663,-0.375,United States,Retail
+17,18,Alice Walton,52.7,-655,-0.295,United States,Retail
+18,19,Jack Ma,48,221,1.35,China,Technology
+19,20,Elon R Musk,45.8,2280,18.3,United States,Technology
+20,21,MacKenzie Bezos,43.1,284,6.04,United States,Technology
+21,22,Jacqueline Mars,42.8,263,0.228,United States,Food & Beverage
+22,23,John Mars,42.8,263,0.232,United States,Food & Beverage
+23,24,Pony Ma,42,270,3.43,China,Technology
+24,25,Francois Pinault,41.1,1340,-0.651,France,Consumer
+25,26,Sheldon Adelson,38.5,432,-0.0241,United States,Entertainment
+26,27,Phil Knight,37.2,152,0.619,United States,Consumer
+27,28,Giovanni Ferrero,32.8,95,0.761,Italy,Food & Beverage
+28,29,Michael Dell,31.9,273,1,United States,Technology
+29,30,Vladimir Potanin,31.1,675,3.06,Russian Federation,Commodities
+30,31,Li Ka-Shing,28.4,154,-1.3,Hong Kong,Real Estate
+31,32,Alain Wertheimer,28.3,248,-1.83,France,Consumer
+32,33,Gerard Wertheimer,28.3,248,-1.83,France,Consumer
+33,34,Tadashi Yanai,27.8,122,-2.89,Japan,Retail
+34,35,Laurene Powell Jobs,27.7,343,1.15,United States,Media & Telecom
+35,36,Hui Ka Yan,26.8,297,-3.28,China,Real Estate
+36,37,Leonardo del Vecchio,25.8,456,0.384,Italy,Consumer
+37,38,Yang Huiyan,25.4,216,-1.48,China,Real Estate
+38,39,Len Blavatnik,25,49.9,-0.907,United States,Diversified
+39,40,Dieter Schwarz,23.9,26.5,-0.91,Germany,Retail
+40,41,Lee Shau Kee,23.6,-28.2,-0.534,Hong Kong,Real Estate
+41,42,Leonard Lauder,23.2,150,0.639,United States,Consumer
+42,43,Vagit Alekperov,23.1,508,0.797,Russian Federation,Energy
+43,44,He Xiangjian,22.1,28.6,-1.49,China,Consumer
+44,45,Jim Simons,22.1,50,1.2,United States,Finance
+45,46,Jorge Paulo Lemann,22.1,59.7,-1.51,Brazil,Food & Beverage
+46,47,Leonid Mikhelson,22,446,-2.55,Russian Federation,Energy
+47,48,Pallonji Mistry,21.9,-70.8,0.411,Ireland,Industrial
+48,49,William Ding,21.5,235,2.92,China,Technology
+49,50,Carl Icahn,21.5,104,1.59,United States,Diversified
+50,51,Vladimir Lisin,21.3,78.6,-0.13,Russian Federation,Industrial
+51,52,Elaine Marshall,20.8,106,-0.528,United States,Industrial
+52,53,Steve Schwarzman,20.4,214,1.85,United States,Finance
+53,54,Stefan Persson,20.4,112,0.108,Sweden,Retail
+54,55,Lee Kun Hee,20,39.4,0.391,"Korea, Republic of",Diversified
+55,56,Takemitsu Takizaki,19.9,-142,-0.832,Japan,Technology
+56,57,Abby Johnson,19.3,215,1.59,United States,Finance
+57,58,Colin Huang,19.3,358,-0.358,China,Technology
+58,59,Alexey Mordashov,19.1,66.4,-0.83,Russian Federation,Industrial
+59,60,Lukas Walton,18.8,-190,-0.117,United States,Retail
+60,61,Jim Ratcliffe,18.7,263,-2.16,United Kingdom,Industrial
+61,62,Susanne Klatten,18.5,104,-2.21,Germany,Industrial
+62,63,Azim Premji,18.2,175,-0.0598,India,Technology
+63,64,Ernesto Bertarelli,18.2,24.8,0.326,Switzerland,Diversified
+64,65,Gina Rinehart,18.1,-96.9,-2.57,Australia,Commodities
+65,66,Thomas Peterffy,18,317,2.84,United States,Finance
+66,67,Lui Che Woo,17.7,160,0.0014,Hong Kong,Entertainment
+67,68,John Menard Jr,17.7,0,1.32,United States,Retail
+68,69,Zhang Zhidong,17.7,122,1.54,China,Technology
+69,70,Joseph Safra,17.6,76.9,-1.37,Brazil,Finance
+70,71,Klaus-Michael Kuehne,17.5,316,-0.521,Germany,Industrial
+71,72,Charoen Sirivadhanabhakdi,17.5,40.4,-2.13,Thailand,Food & Beverage
+72,73,Budi Hartono,17.5,16.7,0.339,Indonesia,Diversified
+73,74,Heinz Hermann Thiele,17.2,191,0.535,Germany,Industrial
+74,75,Eric Schmidt,17.1,89,1.74,United States,Technology
+75,76,Masayoshi Son,17.1,43.6,1.49,Japan,Technology
+76,77,Donald Newhouse,17.1,110,1.11,United States,Media & Telecom
+77,78,Alisher Usmanov,17,14.5,0.364,Russian Federation,Diversified
+78,79,Ray Dalio,17,0,0.366,United States,Finance
+79,80,Wang Jianlin,16.8,247,-0.35,China,Real Estate
+80,81,Roman Abramovich,16.7,106,0.349,Russian Federation,Diversified
+81,82,Henry Cheng,16.6,9.22,-0.204,Hong Kong,Retail
+82,83,Shiv Nadar,16.6,-39.4,0.853,India,Technology
+83,84,Charlene de Carvalho-Heineken,16.5,231,0.517,Netherlands,Food & Beverage
+84,85,Michael Hartono,16.4,16.3,0.33,Indonesia,Diversified
+85,86,Robert Kuok,16.3,-27.5,-0.838,Malaysia,Diversified
+86,87,Donald Bren,16.2,0,0,United States,Real Estate
+87,88,Ken Griffin,16,197,0.403,United States,Finance
+88,89,Aliko Dangote,15.9,-7.27,1.1,Nigeria,Industrial
+89,90,Gennady Timchenko,15.9,375,-2.24,Russian Federation,Diversified
+90,91,Lee Man Tat,15.9,0.606,-0.498,Hong Kong,Food & Beverage
+91,92,Carl Cook,15.6,381,-0.625,United States,Health Care
+92,93,Viktor Vekselberg,15.5,10.8,0.703,Russian Federation,Industrial
+93,94,Stefan Quandt,15.4,80.8,-1.85,Germany,Industrial
+94,95,Hasso Plattner,15.4,192,0.284,Germany,Technology
+95,96,Jim Goodnight,14.9,62.1,1.33,United States,Technology
+96,97,Uday Kotak,14.8,71.1,0.0559,India,Finance
+97,98,Alwaleed Al Saud,14.8,69.1,0.125,Saudi Arabia,Diversified
+98,99,Ricardo Salinas,14.6,102,0.363,Mexico,Diversified
+99,100,Thomas Frist,14.5,154,0.788,United States,Health Care
+100,101,Zhong Huijuan,14.4,-261,0.634,China,Health Care
+101,102,James Dyson,14.3,58.6,0.2,United Kingdom,Consumer
+102,103,Iris Fontbona,14.3,17.7,-1.14,Chile,Commodities
+103,104,Andrey Melnichenko,13.9,73.9,-1.46,Russian Federation,Industrial
+104,105,Mikhail Fridman,13.9,157,0.0584,Russian Federation,Diversified
+105,106,Dustin Moskovitz,13.9,14.9,0.549,United States,Technology
+106,107,Charlie Ergen,13.9,-32.2,1.31,United States,Media & Telecom
+107,108,Dietrich Mateschitz,13.7,257,1.71,Austria,Food & Beverage
+108,109,Sun Piaoyang,13.6,-143,0.26,China,Health Care
+109,110,Wu Yajun,13.3,194,0.51,China,Real Estate
+110,111,Lei Jun,13.1,48.4,2.05,China,Technology
+111,112,Zhang Yiming,13,0,0,China,Technology
+112,113,Alejandro Santo Domingo,13,50.7,-0.778,Colombia,Food & Beverage
+113,114,Gordon Moore,12.8,154,1.12,United States,Technology
+114,115,Dave Duffield,12.7,-68.1,1.77,United States,Technology
+115,116,Zeng Yuqun,12.7,-283,3.78,Hong Kong,Industrial
+116,117,Lakshmi Mittal,12.7,9.44,-0.471,India,Commodities
+117,118,Hugh Grosvenor,12.7,0,-0.051,United Kingdom,Real Estate
+118,119,Phil Anschutz,12.7,26.8,0.0955,United States,Diversified
+119,120,Petr Kellner,12.6,131,-0.264,Czech Republic,Diversified
+120,121,Radhakishan Damani,12.6,293,2.91,India,Retail
+121,122,Joseph Tsai,12.6,73.5,0.459,Canada,Technology
+122,123,Patrick Drahi,12.5,-66.3,0.676,France,Media & Telecom
+123,124,David Tepper,12.5,25,0.937,United States,Finance
+124,125,Pang Kang,12.3,53,-0.518,China,Food & Beverage
+125,126,Reinhold Wuerth,12.3,-113,-1.14,Germany,Industrial
+126,127,Peter Woo,12.2,89.5,-0.522,Hong Kong,Real Estate
+127,128,Mikhail Prokhorov,12.1,6.22,0.619,Russian Federation,Diversified
+128,129,Luis Sarmiento,12.1,-39.2,-0.115,Colombia,Finance
+129,130,Li Shu Fu,12.1,31.2,-0.176,China,Industrial
+130,131,Karl Albrecht Jr,12,13.3,-0.458,Germany,Retail
+131,132,Beate Heister,12,13.3,-0.458,Germany,Retail
+132,133,Raymond Kwok,11.9,67.9,-0.302,Hong Kong,Real Estate
+133,134,Li Xiting,11.9,-400,2.75,Singapore,Health Care
+134,135,Eduardo Saverin,11.8,-16.6,0.654,Brazil,Technology
+135,136,Sun Hongbin,11.7,127,-0.739,United States,Real Estate
+136,137,Sara Mota de Larrea,11.7,-209,0.126,Mexico,Commodities
+137,138,Thomas Kwok,11.5,65.3,-0.285,Hong Kong,Real Estate
+138,139,Liu Yonghao,11.4,199,0.194,China,Diversified
+139,140,Jan Koum,11.4,25,0.225,United States,Technology
+140,141,Eyal Ofer,11.3,-35.8,-0.2,Israel,Services
+141,142,Ned Johnson III,11.2,125,0.774,United States,Finance
+142,143,Micky Arison,11.2,38.1,-0.504,United States,Entertainment
+143,144,Qin Yinglin,11,154,1.88,China,Food & Beverage
+144,145,Xu Hang,11,-363,2.5,Hong Kong,Health Care
+145,146,Michael Kadoorie,10.8,41.1,0.0314,Hong Kong,Energy
+146,147,Zhang Fan,10.7,506,4.35,China,Technology
+147,148,Cen Junda,10.7,-153,0.317,China,Health Care
+148,149,Marijke Mars,10.7,65.5,0.0551,United States,Food & Beverage
+149,150,Victoria Mars,10.7,65.5,0.0551,United States,Food & Beverage
+150,151,Pam Mars-Wright,10.7,65.5,0.0551,United States,Food & Beverage
+151,152,Valerie Mars,10.7,65.5,0.0551,United States,Food & Beverage
+152,153,Sherry Brydson,10.6,37,0.803,Canada,Media & Telecom
+153,154,Gautam Adani,10.6,187,0.578,India,Industrial
+154,155,David Geffen,10.5,94.2,0.49,United States,Entertainment
+155,156,Zhang Bangxin,10.5,250,1.95,China,Services
+156,157,Wang Wei,10.5,198,2.04,China,Services
+157,158,Jim Davis,10.5,214,0.0855,United States,Consumer
+158,159,Autry Stephens,10.4,0,0,United States,Energy
+159,160,Stefano Pessina,10.2,30.5,-0.95,Monaco,Retail
+160,161,Marcel Telles,10.1,25.1,-0.726,Brazil,Food & Beverage
+161,162,Dmitry Rybolovlev,10.1,-6.28,0.482,Russian Federation,Diversified
+162,163,Dietmar Hopp,10.1,173,0.327,Germany,Technology
+163,164,Hui Wing Mau,10.1,142,-0.675,Hong Kong,Real Estate
+164,165,Goh Cheng Liang,10,-184,-1.08,Singapore,Industrial
+165,166,Gustaf Douglas,9.99,76.5,0.645,Sweden,Diversified
+166,167,Steve Cohen,9.96,9.39,0.732,United States,Finance
+167,168,Richard Liu,9.93,139,1.7,China,Technology
+168,169,Victor Rashnikov,9.93,30.9,0.272,Russian Federation,Industrial
+169,170,Graeme Hart,9.91,-87.1,2.86,New Zealand,Finance
+170,171,Robin Li,9.87,115,0.667,China,Technology
+171,172,Stephen Ross,9.8,0,-0.102,United States,Real Estate
+172,173,Galen Weston,9.67,16.7,0.427,Canada,Retail
+173,174,Scott Farquhar,9.66,-113,1.96,Australia,Technology
+174,175,Mike Cannon-Brookes,9.66,-113,1.96,Australia,Technology
+175,176,Sunil Mittal,9.63,-99,1.63,India,Media & Telecom
+176,177,Ma Jianrong,9.61,90.5,-0.459,China,Consumer
+177,178,Patrick Soon-Shiong,9.52,75,0.472,United States,Health Care
+178,179,Blair Parry-Okeden,9.48,187,1.42,United States,Media & Telecom
+179,180,Jim Kennedy,9.48,187,1.42,United States,Media & Telecom
+180,181,Xu Shihui,9.48,39,-0.143,China,Food & Beverage
+181,182,Harry Triguboff,9.47,0,0,Australia,Real Estate
+182,183,German Khan,9.42,79.9,0.066,Russian Federation,Diversified
+183,184,Ron Perelman,9.41,-297,-0.292,United States,Diversified
+184,185,Leonid Fedun,9.41,219,0.29,Russian Federation,Energy
+185,186,Cyrus Poonawalla,9.39,267,0.689,India,Health Care
+186,187,Carlos Sicupira,9.3,13.5,-0.567,Brazil,Food & Beverage
+187,188,Leon Black,9.29,108,1.62,United States,Finance
+188,189,Charles Schwab,9.12,89.6,0.023,United States,Finance
+189,190,Marian Ilitch,9.09,91.8,0.282,United States,Food & Beverage
+190,191,Andrew Forrest,9.02,46.2,-0.0985,Australia,Commodities
+191,192,David Sun,9.01,214,1.09,United States,Technology
+192,193,John Tu,9.01,214,1.09,United States,Technology
+193,194,Sarath Ratanavadi,8.98,-450,0.238,Thailand,Energy
+194,195,August von Finck,8.97,15,-0.304,Germany,Diversified
+195,196,Zhou Qunfei,8.96,-468,2.96,China,Technology
+196,197,Georg Schaeffler,8.96,63.1,-0.972,Germany,Industrial
+197,198,Yongxing Liu,8.93,50.4,-1.61,China,Industrial
+198,199,Mohammed Al-Amoudi,8.86,77.8,0.233,Saudi Arabia,Energy
+199,200,Gianluigi Aponte,8.83,34.3,-0.934,Switzerland,Services
+200,201,Wee Cho Yaw,8.78,32.4,-0.466,Singapore,Finance
+201,202,Alberto Bailleres,8.73,52.7,0.125,Mexico,Commodities
+202,203,Richard Kinder,8.62,37.6,0.348,United States,Energy
+203,204,Christy Walton,8.56,-115,-0.0746,United States,Retail
+204,205,Paolo Rocca,8.56,-7.14,-0.632,Italy,Commodities
+205,206,Reinhold Schmieding,8.55,71.3,-0.63,United States,Health Care
+206,207,George Kaiser,8.47,64.3,-0.109,United States,Energy
+207,208,Theo Albrecht Jr,8.47,7.76,-0.426,Germany,Retail
+208,209,Andy Beal,8.46,25,0.0239,United States,Finance
+209,210,John Fredriksen,8.41,100,-0.84,Cyprus,Industrial
+210,211,Stan Kroenke,8.4,0,0.4,United States,Real Estate
+211,212,Melker Schorling,8.35,146,0.139,Sweden,Diversified
+212,213,Kei Hoi Pang,8.21,2.81,0.0914,China,Real Estate
+213,214,John Malone,8.21,57.8,0.108,United States,Media & Telecom
+214,215,Pham Nhat Vuong,8.19,41.9,-0.894,Viet Nam,Real Estate
+215,216,Emmanuel Besnier,8.16,9.06,-0.0408,France,Food & Beverage
+216,217,George Lucas,8.13,105,-0.0455,United States,Entertainment
+217,218,Marc Benioff,8.12,57.9,1.05,United States,Technology
+218,219,Tan Siok Tjien,8.07,22.4,0.256,Indonesia,Consumer
+219,220,Joseph Lau,8.06,20,0.222,Hong Kong,Real Estate
+220,221,Robert Rowling,8.06,-31.7,-0.267,United States,Energy
+221,222,Charles Gerald John Cadogan,8.04,0,-0.025,United Kingdom,Real Estate
+222,223,Antonia Axson Johnson,8.03,-3.24,0.506,Sweden,Industrial
+223,224,Rupert Murdoch,8.03,68.2,0.238,United States,Media & Telecom
+224,225,Rocco Commisso,8.01,106,0.927,United States,Media & Telecom
+225,226,Niels Louis-Hansen,7.96,127,1.13,Denmark,Health Care
+226,227,Silvio Berlusconi,7.96,21.7,-0.449,Italy,Media & Telecom
+227,228,Harold Hamm,7.88,11.4,-2.33,United States,Energy
+228,229,Benu Gopal Bangur,7.85,233,1.28,India,Commodities
+229,230,Hansjoerg Wyss,7.82,32.7,0.0239,Switzerland,Health Care
+230,231,Sandra Ortega Mera,7.74,91,-0.162,Spain,Retail
+231,232,Ernie Garcia,7.7,759,1.04,United States,Consumer
+232,233,Shu Ping,7.69,215,0.434,Singapore,Food & Beverage
+233,234,Heinrich Deichmann,7.68,111,-1.28,Germany,Retail
+234,235,Zhang Yong,7.67,215,0.434,Singapore,Food & Beverage
+235,236,Cai Kui,7.67,103,0.257,China,Real Estate
+236,237,George Roberts,7.61,58.5,0.543,United States,Finance
+237,238,Henry Kravis,7.6,32.3,0.528,United States,Finance
+238,239,Jensen Huang,7.57,420,1.84,United States,Technology
+239,240,Richard Branson,7.56,523,1.83,United Kingdom,Diversified
+240,241,Pierre Omidyar,7.54,67.8,0.203,United States,Technology
+241,242,Jorn Rausing,7.51,26.6,-0.128,Sweden,Services
+242,243,Lu Zhongfang,7.47,298,0.647,China,Services
+243,244,John Sall,7.46,31.1,0.663,United States,Technology
+244,245,John Albert Sobrato,7.43,0,0.0429,United States,Real Estate
+245,246,Gong Hongjia,7.41,132,0.572,China,Technology
+246,247,Wang Xing,7.4,-19.9,-0.0919,China,Technology
+247,248,Eli Broad,7.4,0,0,United States,Diversified
+248,249,Ralph Lauren,7.38,-22.1,0.216,United States,Consumer
+249,250,Alexander Abramov,7.32,89.8,0.0891,Russian Federation,Industrial
+250,251,Tim Sweeney,7.26,0,0.025,United States,Technology
+251,252,Prajogo Pangestu,7.25,93.3,-1.39,Indonesia,Energy
+252,253,Savitri Jindal,7.24,-14.3,0.342,India,Commodities
+253,254,Geoffrey Kwok,7.23,31.4,-0.203,Hong Kong,Real Estate
+254,255,Mohamed Al Jaber,7.19,-0.0397,-0.00376,Saudi Arabia,Retail
+255,256,Zhang Jindong,7.19,-20.9,-0.255,China,Retail
+256,257,John P Grayken,7.17,129,-0.617,Ireland,Finance
+257,258,Alexey Kuzmichev,7.15,80.8,0.0571,Russian Federation,Diversified
+258,259,Zeng Fangqin,7.14,-233,0.859,China,Industrial
+259,260,Johann Rupert,7.08,25.8,-0.296,South Africa,Diversified
+260,261,Nicky Oppenheimer,7.08,-25,-0.275,South Africa,Diversified
+261,262,Chen Bang,7.07,-103,0.291,China,Health Care
+262,263,Aloys Wobben,7.07,237,-0.21,Germany,Energy
+263,264,Dan Gilbert,7.05,-130,-0.142,United States,Real Estate
+264,265,Jude Reyes,7.05,-140,-0.561,United States,Consumer
+265,266,Chris Reyes,7.05,-140,-0.561,United States,Consumer
+266,267,Les Wexner,7.04,49.1,0.456,United States,Retail
+267,268,Dilip Shanghvi,7.03,-86.9,-0.427,India,Health Care
+268,269,Jay Y Lee,7.03,20.3,0.271,"Korea, Republic of",Diversified
+269,270,Ronda Stryker,6.94,78.2,0.423,United States,Health Care
+270,271,Ronald McAulay,6.93,46.1,0.0412,Hong Kong,Energy
+271,272,Fan Hongwei,6.9,-61.6,-0.0145,China,Energy
+272,273,Bob Rich,6.81,52.8,-0.272,United States,Food & Beverage
+273,274,Takahisa Takahara,6.77,-35.4,0.21,Japan,Consumer
+274,275,Nusli Wadia,6.76,29.5,0.2,India,Diversified
+275,276,Dang Yanbao,6.73,-103,-0.48,China,Energy
+276,277,George Soros,6.7,0,0,United States,Finance
+277,278,David Thomson,6.7,49.4,0.509,Canada,Media & Telecom
+278,279,Steven Spielberg,6.65,25,0.225,United States,Entertainment
+279,280,Taylor Thomson,6.62,48.6,0.508,Canada,Media & Telecom
+280,281,Peter Thomson,6.62,48.6,0.508,Canada,Media & Telecom
+281,282,Robert Pera,6.59,115,-4.44,United States,Technology
+282,283,Yasumitsu Shigeta,6.59,-12.8,-0.697,Japan,Media & Telecom
+283,284,Manny Villar,6.58,36.2,-0.34,Philippines,Diversified
+284,285,Shari Arison,6.55,32.8,0.127,Israel,Diversified
+285,286,Finn Rausing,6.52,0,0,Sweden,Services
+286,287,Kirsten Rausing,6.52,0,0,Sweden,Services
+287,288,Olav Thon,6.51,93.4,-0.000638,Norway,Real Estate
+288,289,Dannine Avara,6.5,16.2,-0.182,United States,Energy
+289,290,Scott Duncan,6.5,16.2,-0.182,United States,Energy
+290,291,Randa Duncan Williams,6.5,16.2,-0.182,United States,Energy
+291,292,Milane Duncan Frantz,6.5,16.2,-0.182,United States,Energy
+292,293,Frank Lowy,6.47,-1.47,-0.228,Australia,Real Estate
+293,294,Richard LeFrak,6.47,38.6,-0.0187,United States,Real Estate
+294,295,Nassef Sawiris,6.44,97.3,-0.381,Egypt,Industrial
+295,296,Stef Wertheimer,6.43,25,0.1,Israel,Diversified
+296,297,Anthony Pratt,6.42,0,-0.348,Australia,Industrial
+297,298,Tito Beveridge,6.4,56.6,1.11,United States,Consumer
+298,299,Gabe Newell,6.38,32.4,0.284,United States,Technology
+299,300,Tsai Eng-Meng,6.34,45,-0.739,Taiwan,Food & Beverage
+300,301,Tan Kim Choo,6.31,51.2,-0.0387,Singapore,Real Estate
+301,302,Ludwig Merckle,6.3,20.1,-0.448,Germany,Industrial
+302,303,Simon Reuben,6.3,0,0.05,United Kingdom,Diversified
+303,304,David Reuben,6.3,0,0.05,United Kingdom,Diversified
+304,305,Juan Beckmann,6.3,93.8,-0.071,Mexico,Food & Beverage
+305,306,Majid Al Futtaim,6.29,-61.1,-0.259,United Arab Emirates,Real Estate
+306,307,Wang Zhenhua,6.29,-57.5,-0.0809,China,Real Estate
+307,308,Bertil Hult,6.28,30.9,-0.682,Sweden,Diversified
+308,309,Jim Pattison,6.27,6.8,0.0652,Canada,Media & Telecom
+309,310,Margaretta Taylor,6.27,124,0.936,United States,Media & Telecom
+310,311,James Chambers,6.27,124,0.936,United States,Media & Telecom
+311,312,Katharine Rayner,6.27,124,0.936,United States,Media & Telecom
+312,313,Jack Dorsey,6.25,180,1.49,United States,Technology
+313,314,Giorgio Armani,6.23,86,-0.606,Italy,Consumer
+314,315,Udo Tschira,6.21,121,0.193,Germany,Technology
+315,316,Harald Tschira,6.21,122,0.193,Germany,Technology
+316,317,Natie Kirsh,6.18,-2.65,0.019,South Africa,Food & Beverage
+317,318,Johann Graf,6.17,-174,-0.666,Austria,Entertainment
+318,319,Leng You-Bin,6.16,6.92,0.941,China,Consumer
+319,320,Joe Lewis,6.13,-7.44,-0.144,United Kingdom,Diversified
+320,321,Rinat Akhmetov,6.12,-1.39,0.0841,Ukraine,Industrial
+321,322,Jerry Jones,6.09,34.5,-0.159,United States,Entertainment
+322,323,Robert Smith,6.08,0,0,United States,Finance
+323,324,Alain Merieux,6.07,19,0.652,France,Health Care
+324,325,Tom Love,6.07,15,0.391,United States,Retail
+325,326,Judy Love,6.07,15,0.391,United States,Retail
+326,327,Francis Choi,6.04,1250,1.25,Hong Kong,Real Estate
+327,328,Ned Johnson IV,6.04,55.5,0.362,United States,Finance
+328,329,Elizabeth Johnson,6.04,55.5,0.362,United States,Finance
+329,330,Pedro Moreira Salles,6.03,13.7,-0.478,Brazil,Finance
+330,331,Jeff Hildebrand,6.02,45.1,-0.561,United States,Energy
+331,332,Charles Butt,6,492,0.279,United States,Retail
+332,333,Alexander Otto,5.99,33.6,-0.0897,Germany,Real Estate
+333,334,Teh Hong Piow,5.99,9.88,-0.468,Malaysia,Finance
+334,335,Kenneth Dart,5.99,-4.39,0.0681,Cayman Islands,Finance
+335,336,Andy Bechtolsheim,5.99,-9.91,0.303,Germany,Technology
+336,337,Kumar Birla,5.99,279,-0.321,India,Industrial
+337,338,Magdalena Martullo-Blocher,5.98,-0.00422,-0.0766,Switzerland,Industrial
+338,339,Edward Roski,5.97,0,0.0196,United States,Real Estate
+339,340,Tamara Hughes Gustavson,5.95,-253,0.212,United States,Services
+340,341,Petr Aven,5.92,24.9,0.0963,Russian Federation,Diversified
+341,342,Jiang Rensheng,5.91,-98.2,0.94,China,Health Care
+342,343,Wu Shaoxun,5.91,-12,-0.505,China,Food & Beverage
+343,344,Philip Ng,5.9,25.7,-0.0796,Singapore,Real Estate
+344,345,Izzy Englander,5.88,41.6,0.283,United States,Finance
+345,346,Vivien Chen,5.87,118,0.461,Hong Kong,Real Estate
+346,347,Nancy Walton Laurie,5.86,-76.4,-0.0313,United States,Retail
+347,348,Lynn Schusterman,5.86,26.6,0.114,United States,Energy
+348,349,Joshua Harris,5.86,68.6,0.0756,United States,Finance
+349,350,Robert Ng,5.84,25.5,-0.0764,Singapore,Real Estate
+350,351,David Shaw,5.84,69.2,0.44,United States,Finance
+351,352,Andre Hoffmann,5.83,72.1,0.507,Switzerland,Health Care
+352,353,Michael Herz,5.83,72.8,0.377,Germany,Consumer
+353,354,Wolfgang Herz,5.83,72.8,0.377,Germany,Consumer
+354,355,Terry Pegula,5.83,25,0.1,United States,Energy
+355,356,Rahul Bajaj,5.81,92,0.247,India,Diversified
+356,357,Rahel Blocher,5.8,-0.00387,-0.0762,Switzerland,Industrial
+357,358,Anders Holch Povlsen,5.78,22.1,-0.591,Denmark,Retail
+358,359,Ding Shizhong,5.77,101,0.111,China,Consumer
+359,360,Rafael del Pino,5.74,48.9,0.396,Spain,Industrial
+360,361,Kim Jungju,5.72,-62.1,0.785,"Korea, Republic of",Technology
+361,362,JK Irving,5.69,-0.103,0.207,Canada,Commodities
+362,363,Iskander Makhmudov,5.67,-4.72,-0.396,Russian Federation,Commodities
+363,364,Joao Moreira Salles,5.67,17.5,-0.479,Brazil,Finance
+364,365,Fernando Moreira Salles,5.67,17.5,-0.479,Brazil,Finance
+365,366,Walter Salles,5.67,17.5,-0.479,Brazil,Finance
+366,367,Maja Hoffmann,5.65,69.6,0.44,Switzerland,Health Care
+367,368,Vera Michalski-Hoffmann,5.65,69.6,0.44,Switzerland,Health Care
+368,369,Dennis Washington,5.65,11.5,0.0316,United States,Industrial
+369,370,Ding Shijia,5.64,97.7,0.132,China,Consumer
+370,371,Leonard Stern,5.63,0,0.05,United States,Real Estate
+371,372,K P Singh,5.63,228,0.0558,India,Real Estate
+372,373,Frederik Paulsen,5.62,-38,0.095,Sweden,Health Care
+373,374,Dhanin Chearavanont,5.61,48.4,-0.18,Thailand,Retail
+374,375,Guenther Fielmann,5.61,55.2,-0.246,Germany,Consumer
+375,376,Terry Gou,5.58,0.261,-0.222,Taiwan,Industrial
+376,377,Bidzina Ivanishvili,5.57,25,0.1,Georgia,Diversified
+377,378,M A Yusuff Ali,5.57,29.5,0.227,United Arab Emirates,Food & Beverage
+378,379,Nie Tengyun,5.52,-38.8,-0.149,China,Services
+379,380,Huang Shilin,5.5,-118,1.58,China,Industrial
+380,381,Quek Leng Chan,5.48,5.92,-0.181,Malaysia,Diversified
+381,382,Charles Dolan,5.48,39,0.157,United States,Media & Telecom
+382,383,Seo Jung-Jin,5.47,-156,0.479,"Korea, Republic of",Health Care
+383,384,Suleiman Kerimov,5.46,37.3,0.387,Russian Federation,Commodities
+384,385,Pat Stryker,5.45,48.8,0.283,United States,Health Care
+385,386,Tom Morris,5.45,-4.74,-0.289,United Kingdom,Retail
+386,387,Fredrik Lundberg,5.45,32.5,0.218,Sweden,Real Estate
+387,388,Michael Otto,5.45,110,-0.0188,Germany,Retail
+388,389,Clive Calder,5.42,0,0.05,United Kingdom,Entertainment
+389,390,Eric Yuan,5.41,389,1.85,United States,Technology
+390,391,Trevor Rees-Jones,5.41,88.4,-0.106,United States,Energy
+391,392,Xavier Niel,5.39,-1.65,0.555,France,Technology
+392,393,Liz Mohn,5.36,33.1,-0.0101,Germany,Media & Telecom
+393,394,John Reece,5.31,75.3,-0.617,United Kingdom,Industrial
+394,395,Shigenobu Nagamori,5.31,-45.5,-0.383,Japan,Industrial
+395,396,Sam Zell,5.3,21.1,0.102,United States,Real Estate
+396,397,Lino Saputo,5.29,4.99,0.0254,Canada,Food & Beverage
+397,398,Ray Hunt,5.28,37.1,-0.2,United States,Energy
+398,399,Andrew Currie,5.28,74.8,-0.613,United Kingdom,Industrial
+399,400,Wolfgang Marguerre,5.27,67.5,-0.174,Germany,Health Care
+400,401,Laurence Graff,5.26,36.9,0.126,United Kingdom,Consumer
+401,402,Walter Scott,5.25,0.859,0.0011,United States,Energy
+402,403,Christopher Hohn,5.23,118,0.0929,United Kingdom,Finance
+403,404,Kjeld Kristiansen,5.23,27.8,-0.534,Denmark,Consumer
+404,405,Sultan Al Kabeer,5.22,32.8,-0.129,Saudi Arabia,Consumer
+405,406,Wang Chuan-Fu,5.21,180,1.04,China,Consumer
+406,407,Hiroshi Mikitani,5.21,-14.7,-0.0759,Japan,Retail
+407,408,Axel Oberwelland,5.21,57,-0.05,Germany,Food & Beverage
+408,409,Barry Diller,5.2,-5.1,-0.0423,United States,Technology
+409,410,Linda Campbell,5.18,18.8,0.38,Canada,Media & Telecom
+410,411,Gaye Farncombe,5.18,18.8,0.38,Canada,Media & Telecom
+411,412,Denise Coates,5.18,67.4,-0.479,United Kingdom,Entertainment
+412,413,Jeff Skoll,5.15,25.6,0.119,United States,Technology
+413,414,Prakash Lohia,5.12,17.6,-0.313,Indonesia,Industrial
+414,415,Arthur Irving,5.11,30.6,-0.7,Canada,Energy
+415,416,Jeff Sutton,5.11,0,0,United States,Real Estate
+416,417,Agnete Thinggaard,5.1,27.8,-0.509,Denmark,Consumer
+417,418,Thomas Kristiansen,5.1,27.8,-0.509,Denmark,Consumer
+418,419,Sofie Kiaer Kristiansen,5.1,27.8,-0.509,Denmark,Consumer
+419,420,Ermirio de Moraes,5.1,0.465,-0.508,Brazil,Commodities
+420,421,Helen Johnson-Leipold,5.1,-2.63,0.0471,United States,Consumer
+421,422,Maria Helena Moraes,5.1,0.553,-0.508,Brazil,Industrial
+422,423,Zong Qinghou,5.09,14.3,0.188,China,Food & Beverage
+423,424,Naguib Sawiris,5.08,51.9,-0.104,Egypt,Media & Telecom
+424,425,Shahid Khan,5.06,78.1,0.00399,United States,Consumer
+425,426,Stan Druckenmiller,5.06,0,0,United States,Finance
+426,427,Isaac Perlmutter,5.04,54.9,-0.0576,United States,Entertainment
+427,428,Pierre Bellon,5.04,9.71,-0.343,France,Retail
+428,429,Jean-Michel Besnier,5.03,5.59,-0.0252,France,Food & Beverage
+429,430,Zhou Hongyi,5.02,-181,0.176,China,Technology
+430,431,Chase Coleman,5.01,0,0.446,United States,Finance
+431,432,Antti Herlin,5.01,34.1,-0.459,Finland,Industrial
+432,433,Chip Wilson,5,39,0.37,Canada,Retail
+433,434,Ann Walton Kroenke,5,-77.8,-0.0213,United States,Retail
+434,435,Herbert Johnson III,4.99,0,0.057,United States,Consumer
+435,436,Winnie Johnson,4.99,0,0.057,United States,Consumer
+436,437,Curt Johnson III,4.99,0,0.057,United States,Consumer
+437,438,Dick Schulze,4.97,28.7,0.191,United States,Retail
+438,439,Du Weimin,4.96,-165,0.964,China,Health Care
+439,440,Frank Wang,4.95,11.2,0.0256,China,Technology
+440,441,-,4.95,783,2.54,-,-
+441,442,Theo Mueller,4.95,49.3,0.24,Germany,Food & Beverage
+442,443,Whitney MacMillan,4.93,25,-0.327,United States,Commodities
+443,444,Gwendolyn Sontheim Meyer,4.93,25,-0.327,United States,Commodities
+444,445,Pauline MacMillan Keinath,4.93,25,-0.327,United States,Commodities
+445,446,Sumet Jiaravanon,4.92,44.7,-0.171,Thailand,Diversified
+446,447,Tilman Fertitta,4.89,43.4,0.397,United States,Entertainment
+447,448,Reed Hastings,4.89,-16,0.667,United States,Technology
+448,449,Richard Li,4.88,-9.31,0.0462,Hong Kong,Media & Telecom
+449,450,Mary Malone,4.87,-21.8,-0.0368,United States,Food & Beverage
+450,451,Bernie Marcus,4.85,25,0.125,United States,Retail
+451,452,Marc Rowan,4.84,37.1,0.0663,United States,Finance
+452,453,Jaran Chiaravanont,4.84,44,-0.169,Thailand,Diversified
+453,454,Odd Reitan,4.83,49.8,-0.818,Norway,Food & Beverage
+454,455,Thomas Schmidheiny,4.81,9.73,-0.288,Switzerland,Industrial
+455,456,Montri Jiaravanont,4.8,43.5,-0.167,Thailand,Diversified
+456,457,Howard Schultz,4.8,38,0.118,United States,Food & Beverage
+457,458,Chen Lip Keong,4.79,68.2,-1.27,Malaysia,Entertainment
+458,459,Yao Liangsong,4.77,192,0.151,China,Retail
+459,460,David Bonderman,4.77,22.6,-0.0109,United States,Finance
+460,461,Mike Adenuga,4.76,-25,0.405,Nigeria,Media & Telecom
+461,462,Sheldon Solow,4.75,0,0.025,United States,Real Estate
+462,463,Pansy Catilina Ho,4.74,25.8,-0.131,Hong Kong,Entertainment
+463,464,Johan Johannson,4.74,19.2,-0.455,Norway,Retail
+464,465,Frits Goldschmeding,4.73,70.3,-0.153,Netherlands,Retail
+465,466,Dan Cathy,4.7,29.6,0.0364,United States,Food & Beverage
+466,467,Bubba Cathy,4.7,29.6,0.0364,United States,Food & Beverage
+467,468,Martin Viessmann,4.69,56.5,-0.0192,Germany,Industrial
+468,469,Thomas Strungmann,4.69,0.268,-0.0992,Germany,Health Care
+469,470,Andreas Strungmann,4.69,0.268,-0.0992,Germany,Health Care
+470,471,Lin Li,4.68,-15.9,-0.199,China,Diversified
+471,472,John Brown,4.68,62.9,0.3,United States,Technology
+472,473,Tom Gores,4.68,0,0.025,United States,Finance
+473,474,Thomas Pritzker,4.64,51.1,0.00295,United States,Finance
+474,475,Bob Miller,4.63,36.2,-0.137,United Kingdom,Consumer
+475,476,Li Shuirong,4.63,10.6,-0.795,China,Energy
+476,477,Kelcy Warren,4.63,47.6,0.0412,United States,Energy
+477,478,Lin Bin,4.63,18.3,0.764,United States,Technology
+478,479,Margot Perot,4.63,0,0.075,United States,Diversified
+479,480,Henry Laufer,4.63,0,0.05,United States,Finance
+480,481,Andrey Guryev,4.62,-11.3,0.161,Russian Federation,Industrial
+481,482,Vyacheslav Moshe Kantor,4.62,36.1,0.0809,Russian Federation,Industrial
+482,483,Guo Guangchang,4.61,48.1,-0.369,China,Finance
+483,484,Jane Lauder,4.6,33.5,0.131,United States,Consumer
+484,485,David Filo,4.6,25,0.1,United States,Technology
+485,486,Charles Johnson,4.6,-65.6,-0.00984,United States,Finance
+486,487,Anthony Bamford,4.59,-20.8,-0.323,United Kingdom,Industrial
+487,488,Mark Scheinberg,4.58,25,0.1,Isle of Man,Entertainment
+488,489,Henry Samueli,4.58,47.7,0.0234,United States,Technology
+489,490,Jeremy Jacobs,4.55,30.3,0.31,United States,Food & Beverage
+490,491,Angela Leong,4.55,5.45,0.0517,Hong Kong,Entertainment
+491,492,B Wayne Hughes,4.51,-30.8,0.101,United States,Services
+492,493,Traudl Engelhorn-Vechiatto,4.5,25,0.075,Switzerland,Diversified
+493,494,Vincent Bollore,4.49,73.5,-0.222,France,Diversified
+494,495,Wang Linpeng,4.47,-41.5,-0.553,China,Retail
+495,496,Barry Lam,4.46,30.8,-0.0429,Taiwan,Technology
+496,497,Bob Kraft,4.46,0.314,-0.000397,United States,Entertainment
+497,498,Sergey Galitskiy,4.45,2.26,0.272,Russian Federation,Retail
+498,499,Chung Mong-Koo,4.44,-17.6,-0.137,"Korea, Republic of",Industrial
+499,500,Judy Faulkner,4.43,-3.84,0.181,United States,Technology
