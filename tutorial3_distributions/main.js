@@ -18,7 +18,8 @@ let ctyNegScale;
 let state = {
   data: [],
   selection1: "All", // + YOUR FILTER SELECTION
-  selection2: "None"
+  selection2: "None",
+  updated: "None"
 };
 
 /* LOAD DATA */
@@ -54,7 +55,7 @@ function init() {
     // 'this.value' holds the dropdown value a user just selected
 
     state.selection1 = this.value
-    console.log("new value is", this.value);
+    state.updated = this.name
     draw(); // re-draw the graph based on this new selection
   });
 
@@ -63,7 +64,7 @@ function init() {
     // 'this.value' holds the dropdown value a user just selected
 
     state.selection2 = this.value
-    console.log("new value is", this.value);
+    state.updated = this.name
     draw(); // re-draw the graph based on this new selection
   });
   
@@ -141,8 +142,13 @@ function draw() {
     selection2Data = (state.data.filter(d => 
      d.Country === state.selection2))
   }
-  filteredData = selection1Data.concat(selection2Data)
-  
+  if (state.updated === "None") {
+    filteredData = selection1Data
+  } else if (state.updated === "dropdown1"){
+    filteredData = selection2Data.concat(selection1Data)
+  } else if(state.updated === "dropdown2"){
+    filteredData = selection1Data.concat(selection2Data)
+  }
 
   
 
@@ -167,7 +173,7 @@ function draw() {
            )
            .attr("r", radius)
            .attr("cy", margin.top)
-           .attr("cx", d => xScale(d.NetWorth)) // initial value - to be transitioned
+           .attr("cx", d => xScale(d.NetWorth))
            .call(enter =>
              enter
                .transition() // initialize transition
