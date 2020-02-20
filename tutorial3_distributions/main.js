@@ -1,7 +1,7 @@
 /* CONSTANTS AND GLOBALS */
 const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
-  margin = { top: 20, bottom: 50, left: 60, right: 40 },
+  margin = { top: 20, bottom: 50, left: 80, right: 40 },
   radius = 7;
 
 // these variables allow us to access anything we manipulate in init() but need access to in draw().
@@ -108,7 +108,7 @@ function init() {
   .append("text")
   .attr("class", "axis-label")
   .attr("x", "50%")
-  .attr("dy", "6em")
+  .attr("dy", "5em")
   .text("Net Worth (in Billions of $)");
 
   svg
@@ -119,7 +119,7 @@ function init() {
   .append("text")
   .attr("class", "axis-label")
   .attr("y", "50%")
-  .attr("dx", "-4em")
+  .attr("dx", "-3.5em")
   .attr("writing-mode", "vertical-rl")
   .text("Change in Wealth in 2020 (in Billions $)");
 
