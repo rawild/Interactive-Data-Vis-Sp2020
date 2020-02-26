@@ -1,5 +1,5 @@
 /* CONSTANTS AND GLOBALS */
-const width = window.innerWidth * 0.7,
+const width = window.innerWidth * 0.9,
   height = window.innerHeight * 0.7,
   margin = { top: 20, bottom: 50, left: 80, right: 40 },
   radius = 7;
@@ -25,7 +25,6 @@ let state = {
 /* LOAD DATA */
 d3.csv("../data/500billionaires_cleaned.csv", d3.autoType).then(raw_data => {
   // + SET YOUR DATA PATH
-  console.log("raw_data", raw_data);
   state.data = raw_data;
   init();
 });
@@ -43,7 +42,7 @@ function init() {
     .scaleLinear()
     .domain(d3.extent(state.data, d => +d.ChangethisYear))
     .range([height - margin.bottom, margin.top])
-  
+  console.log('height: '+ height + 'adj: '+ (height-margin.bottom))
   // + AXES
   const xAxis = d3.axisBottom(xScale)
   const yAxis = d3.axisLeft(yScale)
@@ -114,14 +113,22 @@ function init() {
   svg
   .append("g")
   .attr("class", "axis y-axis")
-  .attr("transform", `translate(${margin.left},${xScale(0)})`)
+  .attr("transform", `translate(${margin.left},0)`)
   .call(yAxis)
   .append("text")
   .attr("class", "axis-label")
   .attr("y", "50%")
   .attr("dx", "-3.5em")
   .attr("writing-mode", "vertical-rl")
-  .text("Change in Wealth in 2020 (in Billions $)");
+  .text("Change in Wealth in 2020 (in Billions of $)");
+
+  d3.select("body")
+      .append("div")
+      .attr("class","source")
+  d3.select(".source")
+      .append("a")
+      .attr("href", "https://www.bloomberg.com/billionaires/")
+      .text("Source: Bloombergs Billionaires Index - Extracted 02/20")
 
   draw(); // calls the draw function
 }
@@ -134,7 +141,7 @@ function draw() {
   let selection1Data = state.data
   let selection2Data = [];
   // + FILTER DATA BASED ON STATE
-  console.log(state)
+
   if (state.selection1 !== "All" ) {
       selection1Data = state.data.filter(d => d.Country === state.selection1)
   } 
@@ -210,5 +217,6 @@ function draw() {
               .attr("cy", width)
               .remove()
           )
-     );
+    );
+    
 }
