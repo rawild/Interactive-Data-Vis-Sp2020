@@ -32,12 +32,12 @@ body {
       text-align: center;
   }
 
-.primary-2 { fill: rgb(57, 113, 243) }	/* Main Primary color */
-.primary-1 { fill: rgb(112, 153, 248) }
-.primary-3 { fill: rgba( 46,106,243,1) }
-.primary-4 { fill: rgb(7, 57, 173) }
+.primary-2 { fill: rgb(19, 82, 255) }	/* Main Primary color */
+.primary-1 { fill: rgb(59, 111, 255) }
+.primary-3 { fill: rgb(69, 27, 252) }
+.primary-4 { fill: rgb(42, 0, 228) }
 
-.complement-2 { fill: rgba(255,199, 88,1) }	/* Main Complement color */
-.complement-1 { fill:  rgb(147, 177, 248)  }
-.complement-3 { fill: rgba(255,178, 25,1) }
-.complement-4 { fill: rgba(255, 73, 0, 1) }
+.complement-2 { fill: rgb(250, 201, 102) }	/* Main Complement color */
+.complement-1 { fill:  rgb(121, 156, 252)  }
+.complement-3 { fill: rgb(255, 136, 25) }
+.complement-4 { fill: rgb(241, 80, 40) }
