@@ -41,3 +41,10 @@ body {
 .complement-1 { fill:  rgb(121, 156, 252)  }
 .complement-3 { fill: rgb(255, 136, 25) }
 .complement-4 { fill: rgb(241, 80, 40) }
+
+.highlight { fill:  rgb(126, 127, 129)}
+.annotation{ fill: grey; 
+            text-anchor: middle;
+            font-size: 12px;}
+.show { fill: rgb(30, 30, 31)}
+.source { font-size: 10px;}

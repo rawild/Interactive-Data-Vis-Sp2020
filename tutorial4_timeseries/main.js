@@ -1,10 +1,10 @@
 /* CONSTANTS AND GLOBALS */
 const width = window.innerWidth * 0.7,
-  height = window.innerHeight * 0.7,
-  margin = { top: 20, bottom: 50, left: 60, right: 40 },
+  height = window.innerHeight * 0.9,
+  margin = { top: 20, bottom: 50, left: 60, right: 120 },
   radius = 5,
   default_selection = "Select a Class",
-  classes= ['Top 1%','Next 4%','Next 5%','Next 10%','Upper-Middle 20%','Middle 20%','Middle 20%','Lower-Middle 20%','Lowest 20%'];
+  classes= ['Top 1%','Next 4%','Next 5%','Next 10%','Upper-Middle 20%','Middle 20%','Lower-Middle 20%','Lowest 20%'];
 
 // these variables allow us to access anything we manipulate in init() but need access to in draw().
 // All these variables are empty before we assign something to them.
@@ -121,6 +121,16 @@ function init() {
     .attr("dx", "-3em")
     .attr("writing-mode", "vertical-rl")
     .text("Percent of Overall Wealth");
+
+    d3.select("body")
+    .append("div")
+    .attr("class","source")
+    d3.select(".source")
+    .append("a")
+    .attr("href", "https://www.nber.org/papers/w24085.pdf")
+    .text("Source: Household Wealth Trends in the United States 1962-2016: Has Middle Class Wealth Recovered?")
+    
+
   draw(); // calls the draw function
 }
 
@@ -142,41 +152,7 @@ function draw() {
     .y0(d => yScale(d[0]))
     .y1(d => yScale(d[1]))
     
-  console.log(filteredData)
-  /*const dot = svg
-  .selectAll(".dot")
-  .data(filteredData, d => d.key) // use `d.year` as the `key` to match between HTML and data elements
-  .join(
-    enter =>
-      // enter selections -- all data elements that don't have a `.dot` element attached to them yet
-      enter
-        .append("circle")
-        .attr("class", "dot "+ fill) // Note: this is important so we can identify it in future updates
-        .attr("r", radius)
-        .attr("cy", height - margin.bottom) // initial value - to be transitioned
-        .attr("cx", d => xScale(d.data.year)),
-    update => update
-    .attr("class", "dot "+ fill),
-    exit =>
-      exit.call(exit =>
-        // exit selections -- all the `.dot` element that no longer match to HTML elements
-        exit
-          .transition()
-          .delay(d => d.data.year)
-          .duration(500)
-          .attr("cy", height - margin.bottom)
-          .remove()
-      )
-  )
-  // the '.join()' function leaves us with the 'Enter' + 'Update' selections together.
-  // Now we just need move them to the right place
-  .call(
-    selection =>
-      selection
-        .transition() // initialize transition
-        .duration(1000) // duration 1000ms / 1s
-        .attr("cy", d => yScale(d[1])) // started from the bottom, now we're here
-  );*/
+
 
   const area = svg
     .selectAll("path.area")
@@ -185,9 +161,45 @@ function draw() {
         .attr("class",  d=> "area " + colorScale(d.key))
         .attr("opacity", 0.7) // start them off as opacity 0 and fade them in
         .attr("d", areaFunc)
-        
-  
+        .on("mouseover",onMouseOver)
+        .on("mouseout",onMouseOut)
+middle = filteredData.filter(d=>d.key==="Middle 20%")
+const offset = 80
+const text = svg
+  .selectAll("text.annotation")
+  .data(middle.slice(middle.length-1))
+  .join("text")
+    .attr("class", "annotation")
+    .attr("x", xScale(new Date(2015, 0 ,1)))
+    .attr("y", d=> {console.log(d)
+      return yScale(d[d.length-1][1])+4})
+      
+text.append("tspan")
+  .text(" - 60% of population")
+  .attr("x", xScale(new Date(2015, 0 ,1))+offset)
+text.append("tspan")
+  .text("  below this line")
+  .attr("dy", "1.25em")
+  .attr("x", xScale(new Date(2015, 0 ,1))+offset)
 }
 
 
+//Event Handler funtions
+function onMouseOver(d) {  // Add interactivity
 
+ 
+  svg.append("text")
+    .attr("id", "i"+ d.index)
+    .attr("class", "show")  
+    .attr("x", xScale(new Date(1984, 0, 1)))
+    .attr("y", yScale(d3.mean(d[0])))
+    .text(d.key)
+    
+}
+
+function onMouseOut(d, i) {
+ 
+
+  // Select text by id and then remove
+  d3.select("#i" + d.index).remove();  // Remove text location
+}
