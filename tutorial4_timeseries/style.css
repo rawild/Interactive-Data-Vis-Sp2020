@@ -24,7 +24,20 @@ body {
     fill: none;
     stroke: black;
   }
-  
-  .container {
-    text-align: center;
-}
+  /*.area {
+    fill: rgb(39, 209, 138);
+    stroke: rgb(39, 100, 72);
+  }*/
+    .container {
+      text-align: center;
+  }
+
+.primary-2 { fill: rgb(57, 113, 243) }	/* Main Primary color */
+.primary-1 { fill: rgb(112, 153, 248) }
+.primary-3 { fill: rgba( 46,106,243,1) }
+.primary-4 { fill: rgb(7, 57, 173) }
+
+.complement-2 { fill: rgba(255,199, 88,1) }	/* Main Complement color */
+.complement-1 { fill:  rgb(147, 177, 248)  }
+.complement-3 { fill: rgba(255,178, 25,1) }
+.complement-4 { fill: rgba(255, 73, 0, 1) }

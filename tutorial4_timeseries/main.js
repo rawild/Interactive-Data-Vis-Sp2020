@@ -10,11 +10,15 @@ const width = window.innerWidth * 0.7,
 let svg;
 let xScale;
 let yScale;
+let colorScale;
+let classes;
+let colors;
 
 /* APPLICATION STATE */
 let state = {
   data: [],
-  selection: null, // + YOUR FILTER SELECTION
+  selection: null, 
+  oldSelection: null
 };
 
 /* LOAD DATA */
@@ -42,12 +46,19 @@ function init() {
     .scaleLinear()
     .domain(d3.extent(state.data, d => d.percentWealth))
     .range([height - margin.bottom, margin.top]);
-    console.log(d3.extent(state.data, d => d.percentWealth))
-    console.log('zero: ' + yScale(0) + ', ydomain: ' + yScale.domain + ', yrange: ' + yScale.range)
+    
     // + AXES
   const xAxis = d3.axisBottom(xScale);
   const yAxis = d3.axisLeft(yScale)
+  // Coloration
+  classes = [...Array.from(new Set(state.data.map(d => d.class)))]
+  colors = ['complement-4','complement-3','complement-2','complement-1','primary-1','primary-2','primary-3','primary-4']
+  colorScale = d3
+    .scaleOrdinal()
+    .domain(classes)
+    .range(colors.reverse())
   
+  classes.push(default_selection)  
   // + UI ELEMENT SETUP
 
 
@@ -62,8 +73,8 @@ function init() {
   // add in dropdown options from the unique values in the data
   selectElement
     .selectAll("option")
-    .data([
-      ...Array.from(new Set(state.data.map(d => d.class))),default_selection]) // + ADD DATA VALUES FOR DROPDOWN
+    .data(
+      classes) // + ADD DATA VALUES FOR DROPDOWN
     .join("option")
     .attr("value", d => d.class)
     .text(d => d);
@@ -113,26 +124,15 @@ function draw() {
   if (state.selection !== null) {
     filteredData = state.data.filter(d => d.class === state.selection);
   } 
- 
-  // + UPDATE SCALE(S), if needed
-  //
-  // + UPDATE AXIS/AXES, if needed
-  //
-  // + DRAW CIRCLES, if you decide to
-  // const dot = svg
-  //   .selectAll("circle")
-  //   .data(filteredData, d => d.name)
-  //   .join(
-  //     enter => enter, // + HANDLE ENTER SELECTION
-  //     update => update, // + HANDLE UPDATE SELECTION
-  //     exit => exit // + HANDLE EXIT SELECTION
-  //   );
-  //
-  // + DRAW LINE AND AREA
-  const lineFunc = d3
-    .line()
-    .x(d => xScale(d.year))
-    .y(d => yScale(d.percentWealth));
+  fill = colorScale(state.selection)
+  console.log(fill)
+  
+  const areaFunc = d3
+    .area()
+    .x(d=> xScale(d.year))
+    .y0(yScale(0))
+    .y1(d => yScale(d.percentWealth))
+    
   
   const dot = svg
   .selectAll(".dot")
@@ -142,11 +142,12 @@ function draw() {
       // enter selections -- all data elements that don't have a `.dot` element attached to them yet
       enter
         .append("circle")
-        .attr("class", "dot") // Note: this is important so we can identify it in future updates
+        .attr("class", "dot "+ fill) // Note: this is important so we can identify it in future updates
         .attr("r", radius)
         .attr("cy", height - margin.bottom) // initial value - to be transitioned
         .attr("cx", d => xScale(d.year)),
-    update => update,
+    update => update
+    .attr("class", "dot "+ fill),
     exit =>
       exit.call(exit =>
         // exit selections -- all the `.dot` element that no longer match to HTML elements
@@ -168,23 +169,27 @@ function draw() {
         .attr("cy", d => yScale(d.percentWealth)) // started from the bottom, now we're here
   );
 
-  const line = svg
-    .selectAll("path.trend")
-    .data([filteredData])
+  const area = svg
+    .selectAll("path.area")
+    .data([filteredData], d=>d.year)
     .join(
       enter =>
         enter
           .append("path")
-          .attr("class", "trend")
+          .attr("class",  "area " + fill)
           .attr("opacity", 0), // start them off as opacity 0 and fade them in
-      update => update, // pass through the update selection
+      update => update
+      .attr("class", "area "+ fill),
+         // pass through the update selection
       exit => exit.remove()
     )
     .call(selection =>
       selection
         .transition() // sets the transition on the 'Enter' + 'Update' selections together.
         .duration(1000)
-        .attr("opacity", 1)
-        .attr("d", d => lineFunc(d))
+        .attr("opacity", .7)
+        .attr("d", d => areaFunc(d))
+        
     );
 }
+
