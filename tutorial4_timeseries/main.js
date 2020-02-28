@@ -186,11 +186,15 @@ text.append("tspan")
 
 //Event Handler funtions
 function onMouseOver(d) {  // Add interactivity
-
- 
   svg.append("text")
     .attr("id", "i"+ d.index)
-    .attr("class", "show")  
+    .attr("class", function(){
+      if(d.index>5){ 
+        return "text showLight"
+      }else{
+        return "text showDark"
+      }
+     })  
     .attr("x", xScale(new Date(1984, 0, 1)))
     .attr("y", yScale(d3.mean(d[0])))
     .text(d.key)
@@ -198,8 +202,6 @@ function onMouseOver(d) {  // Add interactivity
 }
 
 function onMouseOut(d, i) {
- 
-
   // Select text by id and then remove
   d3.select("#i" + d.index).remove();  // Remove text location
 }

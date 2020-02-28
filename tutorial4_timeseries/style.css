@@ -46,5 +46,6 @@ body {
 .annotation{ fill: grey; 
             text-anchor: middle;
             font-size: 12px;}
-.show { fill: rgb(30, 30, 31)}
+.showLight {fill: #b6b6b9;}
+.showDark {fill: #404044;} 
 .source { font-size: 10px;}
