@@ -54,10 +54,7 @@ function init() {
   //projection + resultant path
   const projection = d3.geoAlbersUsa().fitSize([width,height], state.geography);
   path = d3.geoPath().projection(projection);
-
- 
- 
-  
+  //color scale
   colorScale = d3.scaleSequential(d3.extent(state.councilDistricts.map(d => d.Donors)), d3.interpolateYlGnBu).nice()
   // top layer map 
   // modified from Bostok's map here: https://observablehq.com/@d3/non-contiguous-cartogram?collection=@d3/d3-geo
