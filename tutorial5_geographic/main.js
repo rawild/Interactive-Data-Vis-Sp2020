@@ -118,5 +118,4 @@ function draw() {
           ? `${d[0]}: ${d[1]}` // if they do, fill them in
           : null // otherwise, show nothing
     );
-
-}
+};
