@@ -11,6 +11,7 @@ const width = window.innerWidth * 0.6,
 let svg;
 let colorScale;
 let path;
+
 /**
  * APPLICATION STATE
  * */
