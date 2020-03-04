@@ -2,17 +2,46 @@ body {
     /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
     font-family: "Source Sans Pro", sans-serif;
     padding: 1em 3em;
+    background-color: rgb(90, 65, 65);
   }
   
   #tooltip {
     display: block;
     height: 50px;
   }
-  
-  path.district {
-    stroke: black;
-  }
+  #hover-content {
+    background-color: rgb(214, 212, 212);
+    padding: 20px 10px;
+    width: 30%;
+    min-width: 200px;
+    text-align: left;
+    height: 120px;
+    border-radius: 20px;
+}
+#d3-container {
+    min-width: 300px;
+}
+.top-box {
+    background-color:  rgb(214, 212, 212);
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 8px
+} 
+ .side-box {
+     display: inline-flex;
+ }
 
   .container {
     text-align: center;
+  }
+  .sub-header {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 0px;
+  }
+  .row {
+      margin: 4px;
+  }
+  svg {
+      background-color: rgb(90, 65, 65);
   }

@@ -1,7 +1,7 @@
 /**
  * CONSTANTS AND GLOBALS
  * */
-const width = window.innerWidth * 0.9,
+const width = window.innerWidth * 0.6,
   height = window.innerHeight * 0.8,
   margin = { top: 20, bottom: 50, left: 60, right: 40 };
 
@@ -16,7 +16,13 @@ let path;
  * */
 let state = {
   geography: null,
-  councilDistricts: null
+  councilDistricts: null,
+  hover: {
+    District: null,
+    "Current Councilmember": null,
+    "Bernie Donors": null,
+    "Term-limited in 2021": null
+  }
 };
 
 /**
@@ -49,21 +55,45 @@ function init() {
   const projection = d3.geoAlbersUsa().fitSize([width,height], state.geography);
   path = d3.geoPath().projection(projection);
 
-  // basemap
-  svg
-    .selectAll(".district")
-    .data(state.geography.features)
-    .join("path")
-    .attr("d", path)
-    .attr("class", "district")
-    .attr("fill", "none")
-    /*.on("mouseover", d =>{
-
-    })*/
  
-  // + ADD EVENT LISTENERS (if you want)
-  colorScale = d3.scaleSequential(d3.extent(state.councilDistricts.map(d => d.Donors)), d3.interpolateBlues).nice()
-  console.log('colorScale: '+ colorScale)
+ 
+  
+  colorScale = d3.scaleSequential(d3.extent(state.councilDistricts.map(d => d.Donors)), d3.interpolateYlGnBu).nice()
+  // top layer map 
+  // modified from Bostok's map here: https://observablehq.com/@d3/non-contiguous-cartogram?collection=@d3/d3-geo
+  svg.append("g")
+  .attr("stroke", "#000")
+  .selectAll("path.donors")
+  .data(state.geography.features.filter(d => state.councilDistricts[parseInt(d.properties.coun_dist) - 1]))
+  .join(enter =>
+      enter
+      .append("path")
+      .attr("class", "donors")
+      .attr("d", path)
+      .attr("fill", d => colorScale(state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Donors']))
+      .attr("transform", d => {
+        const [x, y] = path.centroid(d);
+        return `
+          translate(${x},${y})
+          scale(${.01})
+          translate(${-x},${-y})
+        `;
+      })
+      .on("mouseover", d =>{
+        state.hover["District"] = "#" +d.properties.coun_dist
+        state.hover["Bernie Donors"] = state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Donors']
+        state.hover[" Current Councilmember"] =state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Council_Member']
+        state.hover["Term-limited in 2021"]= state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Term_Limited'] > 2021 ? "No" : "Yes"
+        draw()
+      })
+      .call(enter =>
+        enter
+          .transition()
+          .delay(d => 2.5 * state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Donors'] )
+          .attr("transform", 'scale(1)')
+        )
+    );
+
   draw(); // calls the draw function
 }
 
@@ -72,35 +102,21 @@ function init() {
  * we call this everytime there is an update to the data/state
  * */
 function draw() {
-// modified from Bostok's map here: https://observablehq.com/@d3/non-contiguous-cartogram?collection=@d3/d3-geo
-svg.append("g")
-  .attr("stroke", "#000")
-  .selectAll("path.donors")
-  .data(state.geography.features.filter(d => state.councilDistricts[parseInt(d.properties.coun_dist) - 1]))
-  .join(enter =>
-      enter
-      .append("path")
-      //.attr("vector-effect", "non-scaling-stroke")
-      .attr("class", "donors")
-      .attr("d", path)
-      .attr("fill", d => {
-        console.log(d)    
-        return colorScale(state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Donors'])
-      })
-      .attr("transform", d => {
-        const [x, y] = path.centroid(d);
-        return `
-          translate(${x},${y})
-          scale(${.1})
-          translate(${-x},${-y})
-        `;
-      })
-      .call(enter =>
-        enter
-          .transition()
-          .delay(d => 2 * state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Donors'] )
-          .attr("transform", 'scale(1)')
-        )
+  // return an array of [key, value] pairs
+  hoverData = Object.entries(state.hover);
+  color = colorScale(state.hover['Bernie Donors'])
+  d3.select("#hover-content")
+    .attr("style","border: solid 12px "+ color +";")
+    .selectAll("div.row")
+    .data(hoverData)
+    .join("div")
+    .attr("class", "row")
+    .html(
+      d =>
+        // each d is [key, value] pair
+        d[1] // check if value exist
+          ? `${d[0]}: ${d[1]}` // if they do, fill them in
+          : null // otherwise, show nothing
     );
 
 }

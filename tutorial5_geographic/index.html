@@ -5,9 +5,19 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container"><h1>Bernie Donors* by City Council District</h1>
-      <h3>*As of Oct 2019</h3>
-    <div id="d3-container"> </div>
+    <div class="container">
+      <div class="top-box">
+        <h1>Bernie Donors* by City Council District</h1>
+        <h3>*As of Oct 2019</h3>
+      </div>
+      <div class="side-box">
+        
+        <div id="hover-content">
+          <p class="sub-header">District Info</p>
+        </div>
+        <div id="d3-container"></div>
+      </div>
+    </div>
     <script src="../lib/d3.js"></script>
     <script src="main.js"></script>
     </div>
