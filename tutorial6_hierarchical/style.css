@@ -9,7 +9,7 @@ body {
     height: fit-content;
     opacity: 0.9;
     pointer-events: none;
-    padding: 8px;
+    padding: 10px 15px;
     border-radius: 10px;
     text-align: left;
   }
@@ -21,3 +21,10 @@ body {
   path.state {
     stroke: black;
   }
+  p {
+      font-size: 12px;
+    }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    }

@@ -92,7 +92,7 @@ function init() {
       state.hover = {
         translate: [
           // offset the tooltip slightly from the circle
-          d.x + 30,
+          d.x + width/15,
           d.y + 10,
         ],
         name: d
@@ -127,6 +127,6 @@ function draw() {
         "transform",
         `translate(${state.hover.translate[0]}px,${state.hover.translate[1]}px)`
       )
-      .style("background-color", "#e9e9e9")
+      .style("background-color", "#edf1fa")
   }
 }
