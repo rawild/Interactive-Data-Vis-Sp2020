@@ -1,9 +1,9 @@
 /**
  * CONSTANTS AND GLOBALS
  * */
-const width = window.innerWidth * 0.9,
-  height = window.innerHeight * 0.7,
-  margin = { top: 20, bottom: 50, left: 60, right: 40 };
+const width = window.innerWidth * 0.8,
+  height = window.innerHeight * 0.8,
+  margin = { top: 5, bottom: 5, left: 5, right: 5 };
 
 let svg;
 
@@ -32,10 +32,10 @@ function init() {
 
   tooltip = container
     .append("div")
-    .attr("width", 100)
-    .attr("height", 100)
-    .style("position", "absolute")
-    .style("background-color", "white");
+    .attr("class", "tooltip")
+    .attr("width", 5)
+    .attr("height", 5)
+    .style("position", "absolute");
 
   svg = container
     .append("svg")
@@ -65,15 +65,13 @@ function init() {
     .sum(([key, values]) => values.total) // sets the 'value' of each level
     .sort((a, b) => b.value - a.value);
 
-  // make treemap layout generator
-  const tree = d3
-    .treemap()
+  // make bubble map layout generator
+  const pack = d3
+    .pack()
     .size([width, height])
     .padding(1)
-    .round(true);
-
   // call our generator on our root hierarchy node
-  tree(root); // creates our coordinates and dimensions based on the heirarchy and tiling algorithm
+  pack(root); // creates our coordinates and dimensions based on the heirarchy and tiling algorithm
 
   console.log(root);
 
@@ -82,27 +80,25 @@ function init() {
     .selectAll("g")
     .data(root.leaves())
     .join("g")
-    .attr("transform", d => `translate(${d.x0},${d.y0})`);
+    .attr("transform", d => `translate(${d.x},${d.y})`);
 
   leaf
-    .append("rect")
+    .append("circle")
     .attr("fill-opacity", 0.6)
     .attr("fill", d => colorScale(d.data[1].donors[0].Candidate)) // take the genre from the first one in the group
-    .attr("width", d => d.x1 - d.x0)
-    .attr("height", d => d.y1 - d.y0)
+    .attr("r", d => d.r)
     .on("mouseover", d => {
       console.log("d", d);
       state.hover = {
         translate: [
-          // center tooltip in rect
-          d.x0 + (d.x1 - d.x0) / 2,
-          d.y0 + (d.y1 - d.y0) / 2,
+          // offset the tooltip slightly from the circle
+          d.x + 30,
+          d.y + 10,
         ],
         name: d
           .ancestors()
           .reverse()
-          .map(d => d.data[0])
-          .join("/"),
+          .map(d => d.data[0]),
         value: d.value,
       };
       draw();
@@ -119,8 +115,10 @@ function draw() {
     tooltip
       .html(
         `
-        <div>Name: ${state.hover.name}</div>
-        <div>Value: ${state.hover.value}</div>
+        <div>Candidate: ${state.hover.name[1]}</div>
+        <div>Year: ${state.hover.name[2]}</div>
+        <div>Donor: ${state.hover.name[3]}</div>
+        <div>Donation Total: $${state.hover.value}</div>
       `
       )
       .transition()
@@ -128,6 +126,7 @@ function draw() {
       .style(
         "transform",
         `translate(${state.hover.translate[0]}px,${state.hover.translate[1]}px)`
-      );
+      )
+      .style("background-color", "#e9e9e9")
   }
 }

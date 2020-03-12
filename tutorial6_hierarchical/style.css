@@ -7,12 +7,17 @@ body {
   .tooltip {
     display: block;
     height: fit-content;
-    background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     pointer-events: none;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
   }
   
+  .container {
+      text-align: center;
+  }
+
   path.state {
     stroke: black;
   }
