@@ -2,7 +2,7 @@ body {
     /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
     font-family: "Source Sans Pro", sans-serif;
     padding: 1em 3em;
-    background-color: rgb(90, 65, 65);
+    background-color: rgb(255, 186, 129);
   }
   
   #tooltip {
@@ -10,25 +10,30 @@ body {
     height: 50px;
   }
   #hover-content {
-    background-color: rgb(214, 212, 212);
+    background-color: rgb(152, 174, 233);
     padding: 20px 10px;
-    width: 30%;
-    min-width: 200px;
+    width: 400px;
     text-align: left;
     height: 120px;
     border-radius: 20px;
 }
 #d3-container {
     min-width: 300px;
+    float: left;
 }
 .top-box {
-    background-color:  rgb(214, 212, 212);
+    background-color:  #98aee9;
     padding: 5px;
     border-radius: 20px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 430px;
 } 
  .side-box {
      display: inline-flex;
+     flex-wrap: wrap;
+     float: left;
+     text-align: left;
  }
 
   .container {
@@ -43,6 +48,6 @@ body {
       margin: 4px;
   }
   svg {
-      background-color: rgb(90, 65, 65);
+      background-color: rgb(255, 186, 129);
   }
   

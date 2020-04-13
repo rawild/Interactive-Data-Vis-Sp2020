@@ -87,11 +87,18 @@ function init() {
       .call(enter =>
         enter
           .transition()
-          .delay(d => 2.5 * state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Donors'] )
+          .delay(d => state.councilDistricts[parseInt(d.properties.coun_dist) -1]['Donors'] )
           .attr("transform", 'scale(1)')
         )
     );
-
+  // Initial hover:
+  d3.select("#hover-content")
+    .attr("style","border: solid 12px #98aee9;")
+    .selectAll("div.row")
+    .data([1])
+    .join("div")
+    .attr("class", "row")
+    .html(d => `${"Hover over a district to get info."}`)
   draw(); // calls the draw function
 }
 
@@ -102,19 +109,21 @@ function init() {
 function draw() {
   // return an array of [key, value] pairs
   hoverData = Object.entries(state.hover);
-  color = colorScale(state.hover['Bernie Donors'])
-  d3.select("#hover-content")
-    .attr("style","border: solid 12px "+ color +";")
-    .selectAll("div.row")
-    .data(hoverData)
-    .join("div")
-    .attr("class", "row")
-    .html(
-      d =>
-        // each d is [key, value] pair
-        d[1] // check if value exist
-          ? `${d[0]}: ${d[1]}` // if they do, fill them in
-          : null // otherwise, show nothing
-    );
+  if (hoverData[0][1] != null){
+    color = colorScale(state.hover['Bernie Donors'])
+    d3.select("#hover-content")
+      .attr("style","border: solid 12px "+ color +";")
+      .selectAll("div.row")
+      .data(hoverData)
+      .join("div")
+      .attr("class", "row")
+      .html(
+        d =>
+          // each d is [key, value] pair
+          d[1] // check if value exist
+            ? `${d[0]}: ${d[1]}` // if they do, fill them in
+            : null // otherwise, show nothing
+      );
+  }
 };
 
